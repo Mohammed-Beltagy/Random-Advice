@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --accent-color: hsl(150, 100%, 66%);
+  --regular-color: hsl(193, 38%, 86%);
+  --main-margin: 28px;
+
+  font-family: 'Manrope', sans-serif;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+/* Center Box & Attribution */
+.container {
+  padding: 0 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  ==========
+    Advice Box
+    ==========  */
+main {
+  position: relative;
+  background-color: hsl(217, 19%, 24%);
+  padding: var(--main-margin);
+  padding-bottom: 0; /* For Dice Button */
+  border-radius: 10px;
+  text-align: center;
+  color: var(--regular-color);
+}
+@media (min-width: 720px) {
+  main{
+    width: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  main{
+    width: 60vw;
+  }
+}
+h5 {
+  color: var(--accent-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin: 12px 0 var(--main-margin);
+}
+q {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+main > img {
+  display: block;
+  width: 100%;
+  margin: var(--main-margin) 0;
+}
+.dice {
+  /* Position */
+  position: relative;
+  left: 50%;
+  margin-bottom:-27.5px;
+  transform: translateX(-50%);
+  /* Design */
+  box-sizing: content-box;
+  width: fit-content;
+  height: 25px;
+  padding: 15px;
+  border-radius: 10000px;
+  background-color: var(--accent-color);
+  color: hsl(218, 23%, 16%); /* For Alt */
+  /* Transition */
+  transition: box-shadow .3s;
+}
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px var(--accent-color);
+}
+.dice:active {
+  box-shadow: 0 0 0;
+}
+.dice img {
+  height: 100%;
+  margin: 0;
+  user-select: none;
+}

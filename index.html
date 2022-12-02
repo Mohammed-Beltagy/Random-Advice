@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Marop Font Familyt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top: 50px; color: var(--regular-color); font-size: 11px; text-align: center; line-height: 1.6;}
+    .attribution a { color: var(--accent-color); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <main>
+      <h5>ADVICE #<span id="advice-id">000</span></h5>
+      <q id="advice-text">The Advice Will Appear Here!</q>
+      <img src = "images/pattern-divider-desktop.svg" alt="<------------ Divider Line ------------>"/>
+      <div id="dice" class="dice"><img src="images/icon-dice.svg" alt="Random Advice"></div>
+    </main>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Mohammed-Beltagy" target="_blank">Mohammed Beltagy</a>.<br>
+      Using <a href="https://api.adviceslip.com/" target="_blank">Advice Slip JSON API</a>.
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
